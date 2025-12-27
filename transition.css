@@ -1,0 +1,41 @@
+body {
+  display: flex;           
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;            
+  margin: 0;
+  background-color: rgb(28, 42, 88);
+  transition: 2s;                
+}
+
+/* Your existing paragraph code */
+span { 
+  text-align: center;
+  font-size: large;
+  font-weight: 100;
+}
+p {
+        display:flex;
+    justify-content: center;
+    align-items: center; 
+  width: 200px; 
+  height: 100px; 
+  background-color: aqua; 
+  transition: 2s; 
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px white;
+}
+
+p:hover { 
+  background-color: blue; 
+  border-radius: 50%; 
+  transform: rotate(360deg); 
+  color: white;
+  box-shadow: 10px 10px 5px black;
+}
+body:has(p:hover) { 
+  background-color: blanchedalmond; 
+  transition: 2s;
+}
+
+
